@@ -53,8 +53,19 @@ if something like that
  
 **Create New Tab again**
 
+## Requirements
+**get list of installed tools**
+> pip list
+
+**Generate a list of all Python packages currently installed in the active virtual environment (or in the global Python environment) and save the list to the requirements.txt file**
+> pip freeze > requirements.txt
+
+**Install all Python packages listed in the file**
+> pip install -r requirements.txt
 
 
+
+## Usefull utilites
 > pip install Appium-Python-Client
 
 > pip install pytest
@@ -92,3 +103,7 @@ def test_find_battery(driver) -> None:
     el.click()
     sleep(5)
 ```
+
+
+
+
