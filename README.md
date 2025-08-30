@@ -29,7 +29,9 @@
 ### set up venv
 **create new virtual environment**
 > python -m venv venv
+> 
 > py -m venv venv
+> 
 > python3 -m venv venv
 
 **Select virtual environment for use in current project**
