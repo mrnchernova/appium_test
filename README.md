@@ -29,6 +29,8 @@
 ### set up venv
 **create new virtual environment**
 > python -m venv venv
+> py -m venv venv
+> python3 -m venv venv
 
 **Select virtual environment for use in current project**
 <img width="756" height="308" alt="img" src="https://github.com/user-attachments/assets/91c9e5fc-90a1-48ad-b983-a5c2b5b46068" />
