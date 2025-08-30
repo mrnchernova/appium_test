@@ -1,29 +1,39 @@
 # appium_test
 
-##CMD
+## CMD
 install Java
+
 install Node.js
+
 install Android Studio
 
 appium.io -> install Appium
->> npm i --location=global appium
+
+> npm i --location=global appium
 
 appium.io -> install Appium driver uiautomator2
->> appium driver install uiautomator2
-!!!- automationName: UiAutomator2
-!!- platformNames: ["Android"]
+
+> appium driver install uiautomator2
+
+!! automationName: UiAutomator2
+
+!! platformNames: ["Android"]
 
 run localhost
->> appium
 
-##PyCharm
-create project 
+> appium
+
+## PyCharm
+create project
+
 set up venv
 
->> pip install Appium-Python-Client
->> pip install pytest
+> pip install Appium-Python-Client
+
+> pip install pytest
 
 ----------------------------------------------------test_appium.py-----------------------------------------------------
+```
 from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
 from appium.options.android UiAutomator2Options
@@ -54,5 +64,4 @@ def test_find_battery(driver) -> None:
     el = driver.find_element(by=AppiumBy.XPATH, value='//*[@text="Battery"]')
     el.click()
     sleep(5)
-
-----------------------------------------------------test_appium.py-----------------------------------------------------
+```
