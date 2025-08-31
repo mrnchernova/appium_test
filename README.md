@@ -99,8 +99,8 @@ appium_server_url = 'http://localhost:4723'
 def driver():
     app_driver = webdriver.Remote(appium_server_url, options=capabilities_options)
     yield app_driver
-    if driver:
-        driver.quit()
+    if app_driver:
+        app_driver.quit()
 
 def test_find_battery(driver) -> None:
     el = driver.find_element(by=AppiumBy.XPATH, value='//*[@text="Battery"]')
@@ -108,6 +108,16 @@ def test_find_battery(driver) -> None:
     sleep(5)
 ```
 
+## Problems
+**If the emulator doesn’t start:**
+1. Wipe data
+2. Cold boot
+3. Clean disk C
+4. Install Microsoft Visual C++
 
 
+## Run
+- start appium server
+- run android emulator
+- run test
 

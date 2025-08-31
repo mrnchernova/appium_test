@@ -21,8 +21,10 @@ appium_server_url = 'http://localhost:4723'
 def driver():
     app_driver = webdriver.Remote(appium_server_url, options=capabilities_options)
     yield app_driver
-    if driver:
-        driver.quit()
+    if app_driver:
+        app_driver.quit()
+
+
 
 def test_find_battery(driver) -> None:
     el = driver.find_element(by=AppiumBy.XPATH, value='//*[@text="Battery"]')
