@@ -1,4 +1,4 @@
-# appium_test !!!/.
+# appium_test !!!/.0
 
 ## CMD !!
 **install Java**
